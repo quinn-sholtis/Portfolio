@@ -4,9 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- !! REPLACE: Update your name and title !! -->
-  <title>Quinn Sholtis — Digital Designer &amp; UI/UX</title>
+  <title>Quinn Sholtis — Digital Designer & UI/UX</title>
   <meta name="description" content="Digital designer specializing in UI/UX, web experiences, and end-to-end digital product design. Currently working with Midmark." />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .seat-feature-card .seat-card-visual { background:#e9e8e5; }
+    .seat-feature-card .seat-card-visual img { object-position:center 38%; }
+    .seat-card-sticker { position:absolute;top:24px;left:24px;padding:9px 12px;background:#fafaf8;color:#0e0e0e;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.12em; }
+    .seat-feature-card .proj-title em {font-style:normal;color:var(--red)}
+    .seat-feature-card .proj-img::after {background:var(--red)}
+  </style>
 </head>
 <body>
 
@@ -197,6 +204,8 @@
 
     </div>
   </section>
+
+
   <!-- ============================================================
       COMMIT TO GROWTH FEATURE
        ============================================================ -->
@@ -243,256 +252,90 @@
   </div>
 </section>
 
-  <!-- ============================================================
-       FEATURED PROJECTS
-       ============================================================ -->
-  <section id="projects">
-    <div class="container">
 
+  <!-- ============================================================
+       SELECTED WORK — EDITORIAL PROJECT GALLERY
+       ============================================================ -->
+  <section id="projects" class="portfolio-gallery" aria-labelledby="projects-title">
+    <div class="container">
       <div class="projects-header reveal">
         <div>
-          <div class="section-eyebrow">Featured Work</div>
-          <h2 class="section-h">
-            Real products.<br><em>Real launches.</em>
-          </h2>
+          <div class="section-eyebrow">Selected Work</div>
+          <h2 class="section-h" id="projects-title">Thoughtful design.<br><em>Real impact.</em></h2>
         </div>
-        <p class="projects-sub">
-          These are enterprise digital projects I helped guide from early brainstorming
-          and content organization through wireframing, interface design, stakeholder
-          review, front-end implementation, and launch.
-        </p>
+        <p class="projects-sub">From digital experiences and interactive interfaces to video production and visual storytelling, my work combines creativity, strategy, and thoughtful execution.</p>
       </div>
-
-
-      <!-- ── PROJECT 1: Comprehensive DENT ─────────────────────────── -->
-      <article class="project reveal">
-        <div class="proj-img">
-          <!-- Trigger website update -->
-          <img src="CD-portfolio-nav.webp" alt="Clinical Data website shown on a laptop">
-          
-        </div>
-
-        <div class="proj-body">
-          <div>
-            <div class="proj-tags">
-              <span class="proj-tag red">Landing Page</span>
-              <span class="proj-tag">UI Design</span>
-              <span class="proj-tag">Wireframing</span>
-              <span class="proj-tag">HTML/CSS</span>
-            </div>
-            <div class="proj-num">01</div>
-            <h3 class="proj-title">Comprehensive Dentistry</h3>
-            <p class="proj-sum">
-              A refresh of Midmark’s Veterinary comprehensive dentistry landing page,
-               focused on creating a clearer and more guided experience for veterinary audiences. 
-               The redesign improved the page structure with quick-link navigation, repositioned 
-               key video content, and refined CTA pathways to better support user journeys. 
-            </p>
-
-            <div class="case-grid">
-              <div>
-                <div class="cs-lbl">Problem</div>
-                <div class="cs-val">Lacked a clear narrative and structure — making it harder for veterinary audiences to understand the value and take action.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">My Role</div>
-                <div class="cs-val">UI design and content restructure - improving hierarchy, navigation, content flow, and CTA paths across key user journeys.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">Process</div>
-                <div class="cs-val">ideation → content bucketing → wireframe → design system → build → staged review → launch.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">Result</div>
-                <div class="cs-val">A landing page that guides the audiences through Midmark’s comprehensive dentistry approach and moves users to action.</div>
-              </div>
-            </div>
-
-            <div class="tools-label">Tools used</div>
-            <div class="tools">
-              <span class="tool">Figma</span>
-              <span class="tool">HTML</span>
-              <span class="tool">CSS</span>
-              <span class="tool">Workfront</span>
-            </div>
+      <div class="gallery-filters" role="group" aria-label="Filter projects by discipline">
+        <button type="button" class="gallery-filter is-active" data-filter="all" aria-pressed="true">All Work <span>05</span></button>
+        <button type="button" class="gallery-filter" data-filter="web" aria-pressed="false">Web &amp; UX <span>03</span></button>
+        <button type="button" class="gallery-filter" data-filter="video" aria-pressed="false">Video <span>01</span></button>
+        <button type="button" class="gallery-filter" data-filter="content" aria-pressed="false">Content <span>01</span></button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <article class="gallery-card reveal" data-category="web">
+          <a class="gallery-card__image" href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener noreferrer" aria-label="View live site: Comprehensive Dentistry">
+            <img src="CD-portfolio-nav.webp" alt="Midmark comprehensive dentistry website preview" loading="lazy">
+            <span class="gallery-card__number">01 / 05</span>
+          </a>
+          <div class="gallery-card__body">
+            <span class="gallery-card__category">WEB DESIGN · UX/UI</span>
+            <h3 class="gallery-card__title">Comprehensive Dentistry</h3>
+            <p class="gallery-card__description">A clearer, more guided veterinary dentistry experience, built around intuitive navigation and meaningful actions.</p>
+            <a class="gallery-card__link" href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener noreferrer">View live site <span aria-hidden="true">↗</span></a>
           </div>
-
-          <div>
-            <div class="actions-label">See the project</div>
-            <div class="proj-actions">
-              <a href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener" class="btn-proj primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live site
-              </a>
-              <a href="https://www.figma.com/proto/GrhBL5dNAH7uvCzG9hC59C/Proofing-Prototypes?node-id=11-701&t=H3UtyTO3ys5bmFKd-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A701" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                Wireframe
-              </a>
-              <a href="https://www.figma.com/proto/GrhBL5dNAH7uvCzG9hC59C/Proofing-Prototypes?node-id=14-2&t=8BHgMIMqY3nnicUE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A701" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-                Before
-              </a>
-              <a href="Workfront%20Proof.pdf" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="18" rx="2"/><path d="M9 4h6v3H9z"/><path d="M9 14l2 2 4-4"/></svg>
-                Approval process
-              </a>
-            </div>
+        </article>
+        <article class="gallery-card reveal" data-category="web">
+          <a class="gallery-card__image" href="https://www.midmark.com/dental/solutions/smartview" target="_blank" rel="noopener noreferrer" aria-label="View live site: Midmark Smart View™">
+            <img src="SM-portfolio-nav.png" alt="Midmark Smart View landing page preview" loading="lazy">
+            <span class="gallery-card__number">02 / 05</span>
+          </a>
+          <div class="gallery-card__body">
+            <span class="gallery-card__category">WEB DESIGN · DIGITAL PRODUCT</span>
+            <h3 class="gallery-card__title">Midmark Smart View™</h3>
+            <p class="gallery-card__description">Introducing a cloud-based dental service through thoughtful content hierarchy, visual design, and front-end execution.</p>
+            <a class="gallery-card__link" href="https://www.midmark.com/dental/solutions/smartview" target="_blank" rel="noopener noreferrer">View live site <span aria-hidden="true">↗</span></a>
           </div>
-        </div>
-      </article>
-
-
-      <!-- ── PROJECT 2: Smart View ─────────────── -->
-      <article class="project flip reveal delay-1">
-        <div class="proj-img">
-          
-          <!-- Trigger website update -->
-          <img src="SM-portfolio-nav.webp" alt="Smart View website shown on a laptop">
-        </div>
-
-        <div class="proj-body">
-          <div>
-            <div class="proj-tags">
-              <span class="proj-tag red">Page Creation</span>
-              <span class="proj-tag">UI Design</span>
-              <span class="proj-tag">Content Hierarchy</span>
-              <span class="proj-tag">HTML/CSS</span>
-            </div>
-            <div class="proj-num">02</div>
-            <h3 class="proj-title">Midmark Smart View™</h3>
-            <p class="proj-sum">
-              A brand new landing page for Midmark Smart View™, a cloud-based subscription service
-              that helps dentistry teams monitor equipment, manage maintenance,
-              access reporting, and stay current with software updates. Created from scratch,
-              the page was shaped from early brainstorming and ideation, Figma wireframing,
-              proofing, and final launch. 
-            </p>
-
-            <div class="case-grid">
-              <div>
-                <div class="cs-lbl">Problem</div>
-                <div class="cs-val">No existing landing page and limited design assets to work from while creating a polished launch experience that could visually explain a new digital service, organize complex product information, and guide users toward the right next step.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">My Role</div>
-                <div class="cs-val">UI design with UX support — creating the page structure, visual hierarchy, Figma concepts, software-based imagery, content flow, CMS build, and proofing.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">PROCESS</div>
-                <div class="cs-val">ideation → content bucketing → wireframe → design system → build → staged review → launch.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">Result</div>
-                <div class="cs-val">A landing page that turns a new digital service into a clear, scannable experience with custom visuals and a focused path to action.</div>
-              </div>
-            </div>
-
-            <div class="tools-label">Tools used</div>
-            <div class="tools">
-              <span class="tool">Figma</span>
-              <span class="tool">HTML</span>
-              <span class="tool">CSS</span>
-              <span class="tool">CMS</span>
-              <span class="tool">Workfront</span>
-            </div>
+        </article>
+        <article class="gallery-card reveal" data-category="content">
+          <a class="gallery-card__image" href="seat-suite.html" aria-label="View case study: Seat Suite — Creative That Connects">
+            <img src="seat-suite-02-action.jpeg" alt="Seat Suite organizer on a stadium seat" loading="lazy">
+            <span class="gallery-card__number">03 / 05</span>
+          </a>
+          <div class="gallery-card__body">
+            <span class="gallery-card__category">SOCIAL CONTENT · BRAND STORYTELLING</span>
+            <h3 class="gallery-card__title">Seat Suite — Creative That Connects</h3>
+            <p class="gallery-card__description">Turning a familiar game-day frustration into engaging social-first product storytelling.</p>
+            <a class="gallery-card__link" href="seat-suite.html">View case study <span aria-hidden="true">↗</span></a>
           </div>
-
-          <div>
-            <div class="actions-label">See the project</div>
-            <div class="proj-actions">
-              <a href="https://www.midmark.com/dental/solutions/smartview" target="_blank" rel="noopener" class="btn-proj primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live site
-              </a>
-              <a href="https://www.figma.com/proto/8cgU20S6QD5D1ISaew0Cee/Smart-View-LP-2025?node-id=158-1623&t=Cmu33WD1tlbsjKL8-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=158%3A1623" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                Wireframe
-              </a>
-            </div>
+        </article>
+        <article class="gallery-card reveal" data-category="video">
+          <a class="gallery-card__image" href="midmark-monitor.html" aria-label="View case study: Midmark Multiparameter Monitor">
+            <img src="thumbnail-mmm.png" alt="Midmark Multiparameter Monitor training video thumbnail" loading="lazy">
+            <span class="gallery-card__number">04 / 05</span>
+          </a>
+          <div class="gallery-card__body">
+            <span class="gallery-card__category">VIDEO · INSTRUCTIONAL DESIGN</span>
+            <h3 class="gallery-card__title">Midmark Multiparameter Monitor</h3>
+            <p class="gallery-card__description">Transforming extensive clinical footage into a navigable training video with original effects, captions, and chapters.</p>
+            <a class="gallery-card__link" href="midmark-monitor.html">View case study <span aria-hidden="true">↗</span></a>
           </div>
-        </div>
-      </article>
-
-
-      <!-- ── PROJECT 3: Anesthesia + Monitoring ─────────────── -->
-      <article class="project reveal">
-
-        <!-- !! REPLACE: Add a screenshot of the Smart View page !! -->
-        <div class="proj-img">
-          <img src="AM-portfolio-nav.webp" alt="Anesthesia and Monitoring website shown on a laptop">
-        </div>
-
-        <div class="proj-body">
-          <div>
-            <div class="proj-tags">
-              <span class="proj-tag red">Landing Page</span>
-              <span class="proj-tag">UI Design</span>
-              <span class="proj-tag">Responsive Design</span>
-              <span class="proj-tag">HTML/CSS</span>
-            </div>
-            <div class="proj-num">03</div>
-            <h3 class="proj-title">Anesthesia + Monitoring</h3>
-            <p class="proj-sum">
-              A redesign of Midmark's Animal Health Anesthesia + Monitoring landing page, 
-              focused on creating a clearer and more intuitive experience for veterinary 
-              audiences. The updated interface improved content hierarchy, navigation, and 
-              CTA placement while connecting anesthesia products, monitoring solutions, and 
-              educational resources into a cohesive user journey.
-
-            </p>
-
-            <div class="case-grid">
-              <div>
-                <div class="cs-lbl">Problem</div>
-                <div class="cs-val">Lacked a clear narrative and structure — making it harder for veterinary audiences to understand the value and take action.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">My Role</div>
-                <div class="cs-val">UI design and content restructure - improving hierarchy, navigation, content flow, and CTA paths across key user journeys.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">Process</div>
-                <div class="cs-val">ideation → content bucketing → wireframe → design system → build → staged review → launch.</div>
-              </div>
-              <div>
-                <div class="cs-lbl">Result</div>
-                <div class="cs-val">A landing page that guides the audiences through Midmark’s comprehensive dentistry approach and moves users to action.</div>
-              </div>
-            </div>
-
-            <div class="tools-label">Tools used</div>
-            <div class="tools">
-              <span class="tool">Figma</span>
-              <span class="tool">HTML</span>
-              <span class="tool">CSS</span>
-              <span class="tool">CMS</span>
-              <span class="tool">Workfront</span>
-            </div>
+        </article>
+        <article class="gallery-card reveal" data-category="web">
+          <a class="gallery-card__image" href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener noreferrer" aria-label="View live site: Anesthesia + Monitoring">
+            <img src="AM-portfolio-nav.webp" alt="Midmark anesthesia and monitoring website preview" loading="lazy">
+            <span class="gallery-card__number">05 / 05</span>
+          </a>
+          <div class="gallery-card__body">
+            <span class="gallery-card__category">WEB DESIGN · UX/UI</span>
+            <h3 class="gallery-card__title">Anesthesia + Monitoring</h3>
+            <p class="gallery-card__description">Helping veterinary audiences explore connected solutions through clearer structure, navigation, and calls to action.</p>
+            <a class="gallery-card__link" href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener noreferrer">View live site <span aria-hidden="true">↗</span></a>
           </div>
-
-          <div>
-            <div class="actions-label">See the project</div>
-            <div class="proj-actions">
-              <a href="https://www.midmark.com/animal-health/solutions/dental-solutions" target="_blank" rel="noopener" class="btn-proj primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live site
-              </a>
-              <a href="https://www.figma.com/proto/GrhBL5dNAH7uvCzG9hC59C/Proofing-Prototypes?node-id=19-118&t=m35NgCt09qQt63he-1&scaling=contain&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=11%3A701" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                Wireframe
-              </a>
-              <a href="https://www.figma.com/proto/GrhBL5dNAH7uvCzG9hC59C/Proofing-Prototypes?node-id=19-2&t=nhQusHyHXvn663CJ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A701" target="_blank" rel="noopener" class="btn-proj secondary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-                Before
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
+        </article>
+      </div>
+      <p class="gallery-empty" id="gallery-status" role="status" aria-live="polite">Showing all 5 projects.</p>
     </div>
   </section>
-
 
   <!-- ============================================================
        PROCESS
@@ -843,6 +686,28 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     revealEls.forEach(el => observer.observe(el));
+
+    /* ── Project category filtering ──────────────────────── */
+    const galleryFilters = document.querySelectorAll('.gallery-filter');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    const galleryStatus = document.getElementById('gallery-status');
+    galleryFilters.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.dataset.filter;
+        galleryFilters.forEach(filter => {
+          const selected = filter === button;
+          filter.classList.toggle('is-active', selected);
+          filter.setAttribute('aria-pressed', String(selected));
+        });
+        let count = 0;
+        galleryCards.forEach(card => {
+          const visible = category === 'all' || card.dataset.category === category;
+          card.hidden = !visible;
+          if (visible) count++;
+        });
+        galleryStatus.textContent = `Showing ${count} ${count === 1 ? 'project' : 'projects'}.`;
+      });
+    });
 
     /* ── Copyright year ───────────────────────────────────── */
     document.querySelectorAll('.foot-copy').forEach(el => {
