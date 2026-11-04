@@ -1,11 +1,11 @@
 /* ============================================================
-   PORTFOLIO â€” Editorial Monochrome (Direction A)
-   Designer: [YOUR NAME] â€” replace throughout
+   PORTFOLIO — Editorial Monochrome (Direction A)
+   Designer: [YOUR NAME] — replace throughout
    ============================================================ */
 
    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
-   /* â”€â”€ Tokens â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+   /* ── Tokens ───────────────────────────────────────────────── */
    :root {
      --ink:          #0e0e0e;
      --ink-2:        #444;
@@ -26,7 +26,7 @@
      --ease: cubic-bezier(0.16, 1, 0.3, 1);
    }
    
-   /* â”€â”€ Reset â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+   /* ── Reset ────────────────────────────────────────────────── */
    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
    html { scroll-behavior: smooth; }
    body {
@@ -41,7 +41,7 @@
    button { font-family: var(--sans); cursor: pointer; border: none; background: none; }
    ul { list-style: none; }
    
-   /* â”€â”€ Utilities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+   /* ── Utilities ────────────────────────────────────────────── */
    .container { width: min(1160px, 92vw); margin-inline: auto; }
    
    .btn {
@@ -221,7 +221,7 @@
    .stat-num em { font-style: normal; color: var(--red); }
    .stat-lbl { font-size: 11px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .09em; }
    
-   /* Hero right â€” image stack */
+   /* Hero right — image stack */
    .hero-right {
      position: relative; height: 500px;
      opacity: 0; animation: fadeUp .9s var(--ease) .4s forwards;
@@ -568,7 +568,7 @@
      transform:translateX(4px);
    
    }
-   /* â”€â”€ Tools: decorative metadata only â€” never clickable â”€â”€â”€â”€â”€â”€â”€ */
+   /* ── Tools: decorative metadata only — never clickable ─────── */
    .tools-label {
      font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
      color: var(--ink-3); margin-bottom: 8px;
@@ -581,7 +581,7 @@
      cursor: default; /* signals "not interactive" on hover */
    }
    
-   /* â”€â”€ Actions: the only clickable row in a project card â”€â”€â”€â”€â”€â”€â”€â”€ */
+   /* ── Actions: the only clickable row in a project card ──────── */
    .actions-label {
      font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
      color: var(--ink-3); margin-bottom: 10px;
@@ -597,13 +597,13 @@
    }
    .btn-proj svg { width: 15px; height: 15px; flex-shrink: 0; }
    
-   /* Primary: the end result â€” always the first, filled button */
+   /* Primary: the end result — always the first, filled button */
    .btn-proj.primary {
      background: var(--ink); color: var(--white);
    }
    .btn-proj.primary:hover { background: var(--red); border-color: var(--red); }
    
-   /* Secondary: wireframe / before / approval â€” equal-weight outlined buttons */
+   /* Secondary: wireframe / before / approval — equal-weight outlined buttons */
    .btn-proj.secondary {
      background: transparent; color: var(--ink);
    }
@@ -753,7 +753,7 @@ CONTACT
 }
 
 .availability li::before{
-  content:"âœ“";
+  content:"✓";
   position:absolute;
   left:0;
   color:var(--red);
